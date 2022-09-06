@@ -51,10 +51,10 @@ char	*ft_save(char *save)
 		free(save);
 		return (NULL);
 	}
+	i++;
 	s = malloc(ft_strlen(save) - i + 1);
 	if (!s)
 		return (NULL);
-	i++;
 	while (save[i])
 		s[j++] = save[i++];
 	s[j] = '\0';
